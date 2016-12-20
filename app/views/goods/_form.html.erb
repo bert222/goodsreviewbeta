@@ -1,0 +1,10 @@
+
+<%= simple_form_for @good, :html => { :multipart => true } do |f| %>
+<%= select_tag(:category_id, options_for_select(@categories), :prompt => "type overtreding") %>
+<%= f.file_field :good_img %>
+<%= f.input :title, label: "Naam item" %>
+<%= f.input :description, label: "Omschrijving" %>
+<%= f.input :other, label: "Andere info" %>
+<%= f.button :submit, "Toevoegen", :class => 'btn-custom2' %>
+
+<% end %>

@@ -1,0 +1,25 @@
+<h1 class="current-category"><%= params[:category] %></h1>
+
+<% if @goods.count == 0 %>
+    <h4>Nog geen overtredingen van dit type beschikbaar.</h4>
+
+    <% else %>
+        
+        <div class="row">
+
+    <% @goods.each do |good| %>
+    
+    <div class="col-md-3">
+      <h5><center> <%= link_to good.title, good_path(good) %> </center></h5>
+      <a href="/goods/<%= good.id %>">
+
+        <%= image_tag good.good_img.url(:good_index), class: "good" %>
+
+        </a>
+        </div>
+    
+    <% end %>
+    </div>
+<% end %>
+
+
