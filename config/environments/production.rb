@@ -79,9 +79,7 @@ x  config.paperclip_defaults = {
     :secret_access_key => ENV['AWS_SECRET_ACCESS_KEY']
   }
 }
-  # Do not dump schema after migrations.
-  config.active_record.dump_schema_after_migration = false
-end
+  end
 
 
   # Use a different logger for distributed setups.
@@ -94,4 +92,6 @@ end
     config.logger = ActiveSupport::TaggedLogging.new(logger)
   end
   
-
+  # Do not dump schema after migrations.
+  config.active_record.dump_schema_after_migration = false
+end
