@@ -79,7 +79,7 @@ x  config.paperclip_defaults = {
     :secret_access_key => ENV['AWS_SECRET_ACCESS_KEY']
   }
 }
-  end
+
 
 
   # Use a different logger for distributed setups.
