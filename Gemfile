@@ -16,6 +16,7 @@ gem 'paperclip', '~> 5.1'
 gem 'jbuilder', '~> 2.5'
 gem 'simple_form', '~> 3.3', '>= 3.3.1'
 gem 'bootstrap-sass', '~> 3.3', '>= 3.3.7'
+gem "figaro"
 
 group :development, :test do
   gem 'byebug', platform: :mri
